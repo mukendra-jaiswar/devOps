@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(5, 207, 243);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(6, 244, 61, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f10bda;
+    transform: translateY(-2px);
+}
+
+.input-group {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: left; /* Align items vertically in the center */
+    margin-bottom: 15px; /* Space between input groups */
+}
+
+input[type="text"] {
+    width: 120px; /* Reduced size for input boxes */
+    padding: 10px; /* Reduced padding */
+    margin-right: 10px; /* Space between label and input */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 18px; /* Smaller font size */
+}
+
+.label {
+    margin-right: 5px; /* Space between label and input */
+    font-size: 14px;                   /* Consistent font size for labels */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Full width buttons on small screens */
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width input boxes on small screens */
+        font-size: 14px;
+    }
+}
